@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playfair+Display:wght@400..900&family=Playwrite+PT+Guides&family=Yuji+Mai&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+/* .App{
+  background-color: rgb(240, 233, 224);
+} */
+
+.faq-accordion{
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.faq-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.faq-item-header{
+  background-color:#f7f7f7f7;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item-header:hover{
+  background-color: #d6d6d6;
+}
+
+.faq-item-body{
+  background-color: #fff;
+  padding: 15px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.53 ease;
+}
+
+.faq-item-body-content{
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(66, 65, 65) ;
+}
+
+.faq-item.active .faq-item-body{
+  max-height: 300px;
+}
